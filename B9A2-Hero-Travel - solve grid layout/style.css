@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    --hover-color: #FF5400;
+    font-family: 'Mulish', sans-serif;
+}
+header {
+    padding-top: 50px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1178px;
+    max-height: 48px;
+    padding: 0px 4px;
+    /* nav has 1178px & section has 1170px thats why i took 4px+4px right-left padding total=8px + section's 1170px = 1178px. the best thing to use left right padding with website container is: the content is never going to touch the side of the screen if occasionally the user screen size is small. i hope you understand, thank you sir. */
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    max-width: 322.63px;
+    max-height: 48px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    max-width: 506px;
+    max-height: 43px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 44px;
+    align-items: center;
+    justify-content: center;
+}
+.menu li {
+    color: var(--Dark-02, #424247);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu li:hover {
+    color: var(--hover-color);
+    transition: .5s ease-in;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav ul {
+    list-style: none;
+}
+.explore-travel {
+    max-height: 500px;
+    margin-top: 48px;
+    background-image: url(./asset/explore-travel.png);
+    border-radius: 16px;
+}
+.explore-travel .image-filter {
+    max-height: 500px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    padding: 106px 0px;
+}
+.explore-travel .content {
+    max-width: 800px;
+    max-height: 288px;
+    margin: 0 auto;
+}
+.explore-travel .content .text {
+    max-width: 676px;
+    max-height: 156px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+.explore-travel .content .topic {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+    margin: 0px 40px;
+}
+.explore-travel .content .description {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    justify-content: center;
+}
+.interactive-menu {
+    max-width: 800px;
+    max-height: 84px;
+    padding: 16px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px; 
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+.interactive-menu input {
+    padding: 16px 0px 16px 16px;
+    width: 174px;
+    height: 52px; 
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+}
+::placeholder {
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+select {
+    padding: 16px 0px 16px 16px;
+    width: 174px;
+    height: 52px; 
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.interactive-menu button {
+    width: 174px;
+    height: 52px; 
+    border-radius: 8px;
+    background: #FF5400; 
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 34px;
+}
+.interactive-menu button .icon {
+    max-width: 24px;
+    max-height: 24px;
+}
+.interactive-menu button p {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+}
+input:focus-visible {
+    outline: 0;
+}
+.our-popular-tours {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.our-popular-tours .picture {
+    max-width: 540px;
+    max-height: 550px;
+}
+.our-popular-tours .content {
+    max-width: 577px;
+    max-height: 550px;
+}
+.our-popular-tours .topic {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.our-popular-tours .description {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin-bottom: 24px;
+}
+.our-popular-tours .description-2 {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin-bottom: 32px;
+}
+.our-popular-tours ul {
+    margin-left: 20px;
+    margin-bottom: 24px;
+}
+.our-popular-tours ul li {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin-bottom: 16px;
+    width: 525px;
+}
+.our-popular-tours ul li:last-child {
+    margin-bottom: 0px;
+}
+.Read-More {
+    width: 174px;
+    height: 52px; 
+    border-radius: 8px;
+    background: #FF5400;    
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 14px 34px;
+}
+.choose-country {
+    margin-top: 100px;
+}
+.choose-country .top-text {
+    max-width: 643px;
+    max-height: 126px;
+    margin: 0 auto;
+}
+.choose-country .top-text .topic {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.choose-country .top-text .description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+
+
+.choose-country .box {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-top: 48px;
+    gap: 24px;
+}
+.four-fr {
+    grid-column: span 4;
+}
+.two-fr {
+    grid-column: span 2 ;
+}
+.three-fr {
+    grid-column: span 3;
+}
+.choose-country .box .sub-box {
+    border-radius: 16px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.choose-country .box .sub-box .picture img {
+    max-width: 100%;
+    height: 100%;
+}
+.choose-country .box .sub-box .picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+}
+.country-name {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.choose-country .box .sub-box:hover {
+    box-shadow: 0px 50px 50px -10px rgba(0, 0, 0, 0.10); 
+}
+.choose-country .box-2 .sub-box:hover {
+    box-shadow: 0px 50px 50px -10px rgba(0, 0, 0, 0.10); 
+}
+.choose-country .box-3 .sub-box:hover {
+    box-shadow: 0px 50px 50px -10px rgba(0, 0, 0, 0.10); 
+}
+
+.why-us {
+    margin-top: 100px;
+}
+.why-us .top-text {
+    max-width: 643px;
+    max-height: 126px;
+    margin: 0 auto;
+}
+.why-us .top-text .topic {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.why-us .top-text .description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
